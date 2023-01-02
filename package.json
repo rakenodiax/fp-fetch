@@ -6,7 +6,16 @@
     "lib"
   ],
   "type": "module",
+  "exports": {
+    ".": {
+      "import": "./lib/index.js"
+    },
+    "./*": {
+      "import": "./lib/*.js"
+    }
+  },
   "main": "lib/index.js",
+  "types": "index.d.ts",
   "typings": "lib/index.d.ts",
   "sideEffects": false,
   "repository": {
